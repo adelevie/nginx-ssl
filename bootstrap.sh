@@ -75,7 +75,7 @@ else
     wget -P /etc/apt/trusted.gpg.d https://sslmate.com/apt/ubuntu1404/sslmate.gpg
     apt-get update
     apt-get install -y sslmate
-    sslmate buy $SERVER_NAME
+    sslmate buy $SERVER_NAME --email adelevie@gmail.com
     ln -s /etc/sslmate/$SERVER_NAME.key /etc/nginx/ssl/keys/private.key
     ln -s /etc/sslmate/$SERVER_NAME.chained.crt /etc/nginx/ssl/keys/server.crt
 fi
